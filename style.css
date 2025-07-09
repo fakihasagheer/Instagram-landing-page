@@ -1,0 +1,1062 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* NAVBAR SECTION */
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Important for small screens */
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(221, 219, 219);
+    gap: 2em;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.logo img {
+    width: 30px;
+}
+.logo p {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin: 0;
+}
+
+/* LINKS */
+.links {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.links a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.links a:hover {
+    color: red;
+}
+
+/* BUTTONS */
+.button {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.button1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(221, 219, 219);
+}
+.button1:hover {
+    color: red;
+}
+.button2 {
+    border: none;
+    width: 7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: rgb(0, 159, 233);
+    color: white;
+}
+.button2:hover {
+    background-color: greenyellow;
+}
+
+ /* MEDIA QUERY FOR SMALL SCREENS           FOR NAVBAR***************************************SECTION 1 */
+@media (max-width: 768px) {
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        text-align: center;
+    }
+
+    .logo, .links, .button {
+        justify-content: center;
+    }
+
+    .button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button1, .button2 {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+
+/* .............................CONTINUING SECTION 2 */
+.section2{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    display: flex;
+}
+/* ...................Right Side */
+.side1{
+    max-width: 60%;
+    margin-top: 7em;
+}
+.side1 h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    font-weight: 600;
+}
+.side1 span{
+    background-color: yellow;
+}
+.side1 p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    color: rgb(77, 74, 74);
+    max-width: 80%;
+}
+.side1 input{
+    border: 2px solid  rgb(0, 159, 233);
+    padding: 5px;
+}
+.side1 button{
+    color: white;
+    background-color:  rgb(0, 159, 233);
+    border: none;
+    padding: 7px;
+    margin-left: -10px;
+}
+.side1 li{
+    display: inline;
+    line-height: 2em;
+    font-size: 11px;
+    padding: 7px;
+}
+
+/* .....................Left Side */
+.side2{                                               /*  small */
+    max-width: 40%;
+    flex-wrap: wrap;
+}
+.dp-div, .ecommerce{
+    display: flex;
+    margin:10px
+}
+.dp-div .para{
+    margin-top: 20px;
+    margin-left: -70px;
+    line-height: 20px;
+}
+.dp-div{
+    width: fit-content;
+    border-radius: 9px;
+    box-shadow: 2px 2px 4px grey;
+    padding: 5px;
+    margin: 10px;
+}
+.dp-div img{
+    width: 60px;
+    border: 2px solid;
+    border-radius: 30%;
+    border-color: blue orange purple red;
+}
+.dp-div p{
+    font-size: 10px;
+    color: rgb(77, 72, 72);
+}
+
+.girl{                                            /* girl part */
+    position: absolute;
+}     
+.insta{
+    position: relative;
+    top: 15em;
+    right: 2em;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px grey;
+    padding: 5px;
+} 
+
+.fruit{                                              /*  fruit */
+     display: grid;
+     margin-left: 21em;
+     margin-top: -5em;
+}
+
+/* ------------- RESPONSIVE THE SECTION 2 ---------------- */
+
+ @media (max-width: 1102px) {
+  .section2 {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 40px;
+  }
+
+  .side1 {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .side1 h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .side1 span {
+    background-color: yellow;
+    padding: 2px 5px;
+  }
+
+  .side1 p {
+    font-size: 16px;
+    max-width: 100%;
+    margin: 15px auto;
+    color: rgb(90, 90, 90);
+  }
+
+  .side1 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .side1 button {
+    width: 100%;
+    padding: 10px;
+    margin-left: 0;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .side1 li {
+    display: block;
+    font-size: 13px;
+    padding: 4px 0;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  .side2 {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .dp-div {
+    margin: 0 auto 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .dp-div img {
+    width: 40px;
+  }
+
+  .dp-div p {
+    font-size: 11px;
+  }
+
+  .girl {
+    position: static;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .insta {
+    position: static;
+    width: 40px;
+    margin: 10px auto 0;
+    display: block;
+    box-shadow: 2px 2px 5px grey;
+  }
+
+  .fruit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: -20px;
+    gap: 15px;
+  }
+
+  .fruit img {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* NEXT SMALL TECT SECTION */
+.text-section{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    text-align: center;
+}
+.text-section img{
+    width: 90px;
+    padding: 10px;
+}
+.text-section p{
+    font-style: oblique;
+    color: rgb(90, 88, 88);
+    line-height: 3em;
+}
+.text-section p:hover{
+    color: blue;
+}
+
+/* ******************************CONTINUING SECTION 3 */
+
+ .section3 {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.section3 img.main {
+    flex: 1 1 600px;      /* fairly large base size */
+    max-width: 850px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.section3 img.main:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.text {
+    flex: 1 1 300px;
+    min-width: 400px;
+    font-size: larger;
+}
+
+ .content {
+    font-size: 20px;
+    color: #444;
+    display: flex;
+    flex-direction: column;  /* stack pairs vertically */
+    gap: 1.5em;             /* space between each pair */
+    padding-top: 40px;
+}
+
+.content > div {
+    display: flex;
+    align-items: center;
+    gap: 1em;               /* space between image and text */
+}
+@media (max-width: 900px) {
+    .section3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+    }
+
+    .section3 img.main {
+        max-width: 90vw;  /* max width relative to viewport */
+        flex: none;
+    }
+
+    .text {
+        width: 100%;
+        min-width: unset;
+        text-align: center;
+    }
+
+    .content {
+        padding-top: 20px;
+    }
+
+    .content > div {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text > h2 {
+        font-size: 28px;
+    }
+}
+
+/* ********************************************SECTION 4 */
+.section4{
+     max-width: 1800px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    background-color: #f7dddd;
+}
+.section4> .top{
+    text-align: center;
+    line-height: 10px;
+}
+.section4> .cards{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.card-img-top{
+    padding: 10px;
+    width: 50px;
+    margin-left: 7em;
+}
+.card-body{
+    line-height: 10px;
+    font-weight: bolder;
+}
+.card{
+    box-shadow: 4px 4px 3px grey;
+    width: 18rem;
+}
+.card:hover{
+    background-color: rgb(237, 241, 213);
+}
+/* resposive */
+@media (max-width:1102px) {
+.card{
+    margin-top: 2em;
+}    
+}
+
+/*......................... CONTINUING SECTION 5 */
+.section5{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 50px 50px;
+}
+.section5> h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.three{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.three> .tem{
+    margin-top: 2em;
+    border: 3px solid rgb(109, 99, 99);
+    width: 25em;
+    text-align: center;
+}
+.three> .tem:hover{
+    border: yellow 3px solid;
+}
+.card-body1> p{
+    line-height: 30px;
+    color: rgb(71, 63, 63);
+}
+
+
+.other {
+  padding: 3em;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.other > .tag {
+  color: #444;
+  margin: 1em auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.card-text{
+   padding-top: 10px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap; /* Makes it stack on smaller screens */
+  margin-top: 1em;
+}
+
+.girl2 {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.next {
+  font-size: 15px;
+  text-decoration: underline;
+  margin: 0;
+}
+
+/* --- Responsive Media Query --- */
+@media (max-width: 600px) {
+  .other {
+    padding: 2em 1em;
+  }
+
+  .other > .tag {
+    font-size: 1em;
+  }
+
+  .girl2 {
+    width: 60px;
+  }
+
+  .next {
+    font-size: 14px;
+  }
+
+  .author-info {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+/* ......................SECTION 6 */
+.section6{
+     max-width: 1800px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    text-align: center;
+    background-color: rgb(228, 243, 243)
+}
+.four{
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2.5em;
+    flex-wrap: wrap;
+}
+.card-1{
+    padding: 15px;
+    width: 17em;
+}
+.card-1 h2{
+    font-size: 25px;
+    padding-top: 20px;
+}
+.btn-lg{
+    margin-bottom: 2em;
+}
+.card-img-top1{
+       border: 2px solid blue;
+       width: 18em;
+       margin-left: -1.5em;   
+       animation: upDown 2s ease-in-out infinite;
+}
+@keyframes upDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.card-img-top1:hover{
+    border: 2px solid yellow;
+}
+.card-text{
+    line-height: 20px;
+    color: #444;
+    padding-bottom: 20px;
+}
+
+/* ......................................SECTION7 */
+.section7{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 50px 60px;
+}
+.section7 img{
+max-width: 100%;
+}
+
+
+/* SECTION8 */
+.section8 {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.section8 button {
+    border: none;
+    padding: 10px 20px;
+    color: blue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.section8 button:hover{
+    color: blueviolet;
+}
+
+.section8 h2 {
+    font-weight: bolder;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section8 p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.features a {
+    color: black;
+    background-color: #e9e8e8;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.features a:hover {
+    color: red;
+}
+.screenshot{
+    max-width: 70%;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .section8 {
+        padding: 30px 20px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section8 h2 {
+        font-size: 20px;
+    }
+
+    .section8 p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section8 {
+        padding: 20px 10px;
+    }
+
+    .section8 h2 {
+        font-size: 18px;
+    }
+
+    .section8 p {
+        font-size: 11px;
+    }
+
+    .features a {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+
+
+/* ...............................SECTION 9 */
+.media-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; 
+  overflow: hidden;
+  border-radius: 12px;
+} 
+
+@media (max-width: 600px) {
+  .media-wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+
+/* **********************SECTION 10 */
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pics img{
+    width: 33%;
+}
+.another{
+ max-width: 60%; 
+ margin-top: -20px; 
+}
+.another p{
+    font-size: 13px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+.next{
+    background-color: #f0dede;
+    text-decoration: none;
+    padding: 2em;
+}
+.else i{
+    background-color: rgb(3, 144, 209);
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: fit-content;
+    padding: 10px;
+}
+.features .card-title{
+    font-weight: bolder;
+}
+.section11> h2{
+    text-align: center;
+    font-weight: bolder;
+}
+.section11{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 50px 60px;
+}
+.center{
+    text-align: center;
+    padding-top: 20px;
+}
+.center:hover{
+    color: blue;
+}
+
+
+/*************************************** SECTION12 */
+.section12 {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 50px 60px;
+  gap: 3em;
+  border-radius: 20px;
+}
+
+.section12 h2 {
+  font-size: 40px;
+}
+
+.left {
+  width: 40%;
+  text-align: justify;
+}
+
+.left p {
+  margin: 1em 0;
+}
+
+.left .writer {
+  font-family: cursive;
+  font-size: 1.2em;
+}
+
+.right {
+  width: 55%;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 2px solid yellow;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .left, .right {
+    width: 100%;
+  }
+
+  .section12 {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .section12 h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section12 {
+    padding: 30px 20px;
+  }
+
+  .section12 h2 {
+    font-size: 26px;
+  }
+
+  .left .writer {
+    font-size: 1em;
+  }
+}
+
+/************************** SECTION 12 */
+.more> i{
+color: yellow;
+}
+.tagline{
+    color: grey;
+}
+.tagline> i{
+    color: orangered;
+}
+.person{
+    width: 100px;
+    padding: 10px;
+}
+
+/* ************************************SECTION 13 */
+.section13{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 50px 60px;
+}
+.section13 h2{
+    align-items: center;
+    font-size: 35px;
+}
+.section13 img{
+    width: 100%;
+    padding-top: 40px;
+}
+
+/* ***************************SECTION 14 */
+.section14 {
+  background-color: rgb(228, 243, 243);
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 50px 60px;
+}
+
+.cards-prize {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.prize-cards {
+  padding: 20px;
+  background-color: white;
+  width: 22%;
+  border: 2px solid blue;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: border 0.3s;
+}
+
+.prize-cards:hover {
+  border: 2px solid yellow;
+}
+
+.prize-cards h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.prize-cards p {
+  margin: 5px 0;
+}
+
+.prize-cards button {
+  margin: 15px 0;
+  padding: 10px 15px;
+  background-color: rgb(132, 210, 230);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paras {
+  line-height: 1.6;
+}
+
+.paras-1 {
+  color: #b1acac;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1200px) {
+  .prize-cards {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .prize-cards {
+    width: 100%;
+  }
+
+  .section14 {
+    padding: 30px 20px;
+  }
+}
+
+/* *************************SECTION 15 */
+.section15{
+    max-width: 1800px;
+  margin: 0 auto;
+  padding: 50px 60px;
+}
+
+/* *******************SECTION 16 */
+.section16{
+    max-width: 1800px;
+  margin: 0 auto;
+  padding: 50px 60px;
+}
+.section16> img{
+     padding-top: 10px;
+     width: 80%;
+}
+/* **************************SETION17 */
+.section17 {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section17 h2 {
+  font-size: xx-large;
+  margin: 10px 0;
+}
+
+.section17 p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
+  font-size: 14px;
+}
+
+.section17 .form-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.section17 input {
+  border: 2px solid blue;
+  padding: 10px;
+  height: 43.5px;
+  width: 250px;
+  max-width: 100%;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.section17 button {
+  color: white;
+  background-color: blue;
+  padding: 10px 20px;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.section17 button:hover {
+  color: yellow;
+}
+
+.section17 > .dot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  font-size: 12px;
+  color: rgb(90, 89, 89);
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  .section17 .form-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section17 input,
+  .section17 button {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid blue;
+  }
+
+  .section17 input {
+    margin-bottom: 10px;
+    border-right: 2px solid blue;
+  }
+
+  .section17 button {
+    border-left: 2px solid blue;
+  }
+}
